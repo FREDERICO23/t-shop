@@ -1,0 +1,27 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "==5.0.2"
+djangorestframework = "==3.14.0"
+python-dotenv = "==1.0.1"
+psycopg2-binary = "==2.9.9"
+django-cors-headers = "==4.3.1"
+python-jose = "==3.3.0"
+africastalking = "==1.2.5"
+coverage = "==7.4.1"
+drf-yasg = "==1.21.7"
+python-social-auth = "==0.3.6"
+social-auth-app-django = "==5.4.0"
+social-auth-core = "==4.5.1"
+dj-database-url = "*"
+djangorestframework-simplejwt = "*"
+setuptools = "*"
+whitenoise = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"

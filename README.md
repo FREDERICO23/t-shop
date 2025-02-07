@@ -23,7 +23,7 @@ A Django REST API service for managing customers and orders with SMS notificatio
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/t-shop.git
+git clone https://github.com/FREDERICO23/t-shop.git
 cd t-shop
 ```
 
@@ -31,6 +31,15 @@ cd t-shop
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+OR 
+
+PIpenv:
+
+```bash
+pipenv install
+pipenv shell
 ```
 
 3. Install dependencies:

@@ -39,6 +39,22 @@ pip install -r requirements.txt
 ```
 
 4. Create a `.env` file based on `.env.example` and fill in your credentials.
+ Use this example: 
+
+ ```
+   SECRET_KEY="django-insecure-hiuvhd5-)#3o1_d=2-z&^+ymvp*u-6kmy8s9^aryovrr0v3$wn"
+   DATABASE_URL=postgresql://fredricomosh:Ooy5SuRcn6UQ@ep-crimson-poetry-07648100.us-east-2.aws.neon.tech/tshop?sslmode=require
+   DEBUG=True
+   AUTH0_DOMAIN=dev-s8xuus8i1y70ysrp.us.auth0.com
+   AUTH0_CLIENT_ID=QH9YySC1lNUWfkqu32ztVlPefXJECaCf
+   AUTH0_CLIENT_SECRET=L2KADcNXMf6BtTXC2f0hniJoRYWCrnMaJsbJLo0z9LuO5uS1X9Oqfu0IKrMalXuB
+
+   AT_USERNAME=sandbox
+   AT_API_KEY=atsk_62851277f7cc8af2c60ebfb36b569763738cb31f164352fbedfa097c6fb921afa0bd1acc
+   AT_SENDER_ID=your-sender-id
+
+   API_URL=https://tshop.vercel.app
+ ```
 
 5. Run migrations:
 ```bash
@@ -54,27 +70,3 @@ python manage.py createsuperuser
 ```bash
 python manage.py runserver
 ```
-
-## Auth0 Integration
-
-1. Create an Auth0 account at https://auth0.com
-
-2. Create a new application:
-   - Go to Applications > Create Application
-   - Choose "Regular Web Application"
-   - Note down the Domain, Client ID, and Client Secret
-
-3. Configure Auth0 Application:
-   - Allowed Callback URLs: `http://localhost:8000/auth/complete/auth0`
-   - Allowed Logout URLs: `http://localhost:8000`
-
-4. Update your `.env` file with Auth0 credentials:
-```
-AUTH0_DOMAIN=your-domain.auth0.com
-AUTH0_CLIENT_ID=your-client-id
-AUTH0_CLIENT_SECRET=your-client-secret
-```
-
-## Africa's Talking Integration
-
-1
